@@ -1,0 +1,45 @@
+/* Produtos.css */
+
+.produtos-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .imagem-principal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
+  }
+  
+  .whatsapp-button {
+    background-color: #8bb5d5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+/* Produtos.css */
+
+.back-icon {
+    position: absolute; /* Posiciona o ícone em relação ao container */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    cursor: pointer; /* Cursor de ponteiro */
+    color: #8bb5d5; /* Cor do ícone */
+  }
+  
+  .back-icon:hover {
+    color: #76a3c2; /* Cor ao passar o mouse */
+  }
