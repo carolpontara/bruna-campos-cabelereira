@@ -1,45 +1,67 @@
-/* Produtos.css */
-
 .produtos-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .imagem-principal {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .carousel {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    transition: opacity 0.5s ease-in-out; /* Transição suave */
-  }
-  
-  .whatsapp-button {
-    background-color: #8bb5d5;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-  }
-/* Produtos.css */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.imagem-principal {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 80%; /* Reduz o tamanho da imagem para 80% da largura do contêiner */
+  max-width: 400px; /* Limita a largura máxima para 400px */
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8bb5d5;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 5px; /* Ajuste para aproximar a seta à esquerda da imagem */
+}
+
+.carousel-button.right {
+  right: 5px; /* Ajuste para aproximar a seta à direita da imagem */
+}
+
+.whatsapp-button {
+  background-color: #8bb5d5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
 
 .back-icon {
-    position: absolute; /* Posiciona o ícone em relação ao container */
-    top: 20px; /* Distância do topo */
-    left: 20px; /* Distância da esquerda */
-    cursor: pointer; /* Cursor de ponteiro */
-    color: #8bb5d5; /* Cor do ícone */
-  }
-  
-  .back-icon:hover {
-    color: #76a3c2; /* Cor ao passar o mouse */
-  }
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: #8bb5d5;
+}
+
+.back-icon:hover {
+  color: #76a3c2;
+}

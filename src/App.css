@@ -1,65 +1,78 @@
-.App {
-  text-align: center;
+/* Estilo para remover o sublinhado dos links */
+a {
+  text-decoration: none; /* Remove o sublinhado */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Estilo do container principal */
 .app-container {
-  background-color: white;
-  padding: 20px;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo */
-}
-
-/* Estilo do botão de WhatsApp */
-.whatsapp-button {
-  display: inline-block;
-  padding: 15px 30px;
-  margin-top: 20px;
-  background-color: #8bb5d5;
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.whatsapp-button:hover {
-  background-color: #77a3c4;
-}
-.App-header {
-  background-color: #282c34;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: #ffffff; /* Fundo azul */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Inclui padding e border nas dimensões */
+}
+
+/* Estilo da página inicial */
+.home-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  width: 100vw; /* Ocupa 100% da largura da viewport */
+  height: 100vh; /* Ocupa 100% da altura da viewport */
+  background-color: #0d4f83; /* Cor de fundo */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Inclui o padding nas dimensões totais */
+}
+
+/* Estilo do container da foto de perfil e do nome */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo da imagem de perfil (circular) */
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Estilo do nome de usuário */
+.profile-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Estilo dos botões */
+.image-button {
+  width: 250px;  /* Aumenta a largura */
+  height: 60px;  /* Altura para um botão mais cilíndrico */
+  margin: 10px;
+  background-color: #a1c8d3;  /* Azul claro */
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;  /* Bordas arredondadas */
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-button:hover {
+  background-color: #8fbac4;  /* Cor um pouco mais escura no hover */
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
