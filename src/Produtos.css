@@ -38,10 +38,12 @@
 
 .carousel-button.left {
   left: 5px; /* Ajuste para aproximar a seta à esquerda da imagem */
+  color: black;
 }
 
 .carousel-button.right {
   right: 5px; /* Ajuste para aproximar a seta à direita da imagem */
+  color: black;
 }
 
 .whatsapp-button {
