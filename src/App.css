@@ -1,6 +1,6 @@
 /* Estilo para remover o sublinhado dos links */
 a {
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none;
 }
 
 /* Estilo do container principal */
@@ -9,11 +9,12 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #ffffff; /* Fundo azul */
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove padding */
-  box-sizing: border-box; /* Inclui padding e border nas dimensões */
+  background-color: #000000; /* Azul claro */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 /* Estilo da página inicial */
 .home-page {
@@ -21,12 +22,9 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100vw; /* Ocupa 100% da largura da viewport */
-  height: 100vh; /* Ocupa 100% da altura da viewport */
-  background-color: #0d4f83; /* Cor de fundo */
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove padding */
-  box-sizing: border-box; /* Inclui o padding nas dimensões totais */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
 /* Estilo do container da foto de perfil e do nome */
@@ -42,7 +40,8 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #fff;
+  border: 3px solid #ffffff;
+  object-fit: cover;
 }
 
 /* Estilo do nome de usuário */
@@ -51,28 +50,48 @@ a {
   font-weight: bold;
   color: #ffffff;
   margin-top: 10px;
-  text-align: center;
 }
 
-/* Estilo dos botões */
-.image-button {
-  width: 250px;  /* Aumenta a largura */
-  height: 60px;  /* Altura para um botão mais cilíndrico */
-  margin: 10px;
-  background-color: #a1c8d3;  /* Azul claro */
-  color: #ffffff;
-  border: none;
-  border-radius: 30px;  /* Bordas arredondadas */
-  font-size: 1.2em;
-  cursor: pointer;
+/* Estilo dos botões personalizados */
+.custom-button {
+  position: relative;
+  width: 300px;
+  padding: 15px;
+  background-color: #a1c8d3; /* Azul claro */
+  color: #003366; /* Azul escuro */
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+.custom-button-foto {
+  position: relative;
+  width: 300px;
+  padding: 15px;
+  background-color: #000000; /* Azul claro */
+  color: #003366; /* Azul escuro */
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.custom-button:hover {
+  transform: scale(1.05);
 }
 
-.image-button:hover {
-  background-color: #8fbac4;  /* Cor um pouco mais escura no hover */
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+/* Estilo para o texto secundário (CLIQUE AQUI) */
+.button-subtext {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-top: 8px;
+  color: #ffffff; /* Texto branco */
+  font-weight: normal;
+  padding: 4px 12px;
+  background-color: #003366; /* Fundo azul escuro */
+  border-radius: 12px; /* Bordas arredondadas */
 }
